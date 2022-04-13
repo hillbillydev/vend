@@ -57,7 +57,7 @@ func TestGetProducts(t *testing.T) {
 }
 
 func setupTest() (*Server, *inmemory.InMemory) {
-	storage := inmemory.NewInMemoryInMemory()
+	storage := inmemory.NewInMemory()
 	s := NewServer("8080", storage)
 
 	return s, storage
